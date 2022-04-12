@@ -5,6 +5,7 @@ body {
   font-family: inter, arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   color: var(--body-color);
+  margin-top: 10px;
 }
 
 /* colors */
@@ -70,4 +71,31 @@ h3 {
   .link-arrow {
     font-size: 1.5rem;
   }
+}
+/* badges */
+.badges{
+    border: 0;
+    border-radius: 20px;
+    font-weight:600;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+.badges--primary{
+    background: var(--primary-color);
+    color: white
+}
+.badges--secondary{
+    background: var(--secondary-color);
+}
+.badges--small{
+    font-size: 1.2rem;
+}
+@media screen and (min-width:800px) {
+    .badges{
+        font-size: 1.5rem;
+    }
+    .badges--small{
+        font-size: 1.2rem;
+    }
 }
