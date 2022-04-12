@@ -1,8 +1,50 @@
-:root:{
-    --primary-color:#2548ff;
-    --secondary-color:#00d9ff;
-    --accent-color:#ff3400;
-    --headings-color:#1b0760;
-    --body-color:#918ca4;
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-color: #2548ff;
+  --secondary-color: #00d9ff;
+  --accent-color: #ff3400;
+  --headings-color: #1b0760;
+  --body-color: #918ca4;
+}
+body {
+  font-family: inter, arial, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  color: var(--body-color);
+}
+h1,
+h2,
+h3 {
+  color: var(--headings-color);
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-top: 0;
+  line-height: 3rem;
 
+}
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2.4rem;
+    }
 }
