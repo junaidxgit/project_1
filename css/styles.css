@@ -1,6 +1,13 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: inter, arial, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  color: var(--body-color);
+}
+
+/* colors */
 :root {
   --primary-color: #2548ff;
   --secondary-color: #00d9ff;
@@ -8,21 +15,17 @@ html {
   --headings-color: #1b0760;
   --body-color: #918ca4;
 }
-body {
-  font-family: inter, arial, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
-  color: var(--body-color);
-}
 h1,
 h2,
 h3 {
   color: var(--headings-color);
   margin-bottom: 1.5rem;
 }
+
 p {
   margin-top: 0;
   line-height: 3rem;
-
+  /* typography */
 }
 h1 {
   font-size: 7rem;
@@ -35,16 +38,36 @@ h3 {
 }
 
 @media screen and (min-width: 800px) {
-    body{
-        font-size: 1.8rem;
-    }
-    h1{
-        font-size: 8rem;
-    }
-    h2{
-        font-size: 4rem;
-    }
-    h3{
-        font-size: 2.4rem;
-    }
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+/* links */
+.link-arrow {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 800px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
 }
