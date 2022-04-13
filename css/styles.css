@@ -371,8 +371,23 @@ h3 {
 
 @media screen and (min-width: 800px) {
   .grid--3colmn{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+/* testimonial */
+.card__testimonial{
+  display: grid;
+}
+.testimonial__cont > img{
+    width: 100%;
+}
+.testimonial__cont > img{
+    position: relative;
+}
+.testimonial__cont .icon-container{
+  position: absolute; 
+   top: 3rem;
+  right: 33;
 }
 
 
