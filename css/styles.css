@@ -6,10 +6,15 @@ body {
   font-size: 2.4rem;
   margin-top: 10px;
 }
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
 
 /* colors */
 :root {
-  --primary-color: #2548ff;
+  --primary-color: #1036f3;
   --secondary-color: #00d9ff;
   --accent-color: #ff3400;
   --headings-color: #1b0760;
@@ -121,5 +126,58 @@ h3 {
 @media screen and (min-width: 800px) {
   .list--tick .list__items {
     padding-left: 0rem;
+  }
+}
+/* buttons */
+.btn {
+  border: 0;
+  border-radius: 40px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+
+  padding: 2rem 3rem;
+  font-weight: 600;
+  /* display: block; */
+  white-space: nowrap;
+}
+.btn--primary:hover {
+  background: #9eaefd;
+}
+.btn--primary {
+  background: var(--primary-color);
+  color: white;
+}
+.btn--secondary {
+  background: var(--secondary-color);
+  color: white;
+}
+.btn--secondary:hover {
+  background: #63e2f9;
+}
+.btn--accent {
+  background: var(--accent-color);
+  color: white;
+}
+.btn--accent:hover {
+  background: #802b15;
+}
+.btn--outline{
+  background: var(--headings-color);
+  color: white;
+  border: 2px solid var(--headings-color);
+}
+.btn--outline:hover{
+  background: #fff;
+  color: var(--headings-color);
+}
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .btn{
+    font-size: 1.5rem;
   }
 }
