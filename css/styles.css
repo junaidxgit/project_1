@@ -4,7 +4,6 @@ html {
 body {
   font-family: inter, arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
-  margin-top: 10px;
 }
 *,
 *::before,
@@ -94,6 +93,7 @@ h3 {
 }
 .badges--secondary {
   background: var(--secondary-color);
+  columns: white;
 }
 .badges--small {
   font-size: 1.2rem;
@@ -182,6 +182,25 @@ h3 {
     font-size: 1.5rem;
   }
 }
+/* icons */
+.icon{
+  width: 40px;
+  height: 40px;  
+
+}
+.icon--primary{
+  fill: var(--primary-color)
+}
+.icon-container{
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* inputs */
 .inp{
   padding: 1.5rem 3.5rem;
@@ -217,7 +236,7 @@ h3 {
 /* card */
 .card{
   font-size: 2rem;
-  border: 1px solid var(--border-color);
+  border: 0.5px solid var(--border-color);
   box-shadow: 0 0 20px 10px #f3f3f3;
   border-radius: 10px;
   overflow: hidden;
@@ -229,3 +248,61 @@ h3 {
   background: var(--secondary-color);
   color: white;
 }
+/* plane */
+.plan .plan__name{
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.plan .plan__price{
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+.plan__price-cycle{
+  opacity: 0.8;
+}
+.plan .badges{
+  padding: 0.5rem 1.5rem;
+  margin-left:8px;
+}
+.plan__discription{
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.plan .list__items{
+  margin-bottom: 2rem;
+}
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url('../images/popular.svg');
+  width: 35px;
+  display: block;
+  position: absolute;
+  top: -3%;
+  right: 5%;
+
+}
+@media screen and (min-width:800px) {
+  .plan .plan__name{
+    font-size: 1.5rem;
+  }
+ .plan .plan__price{
+    font-size: 4rem;
+  }
+  .plan .plan__price-cycle{
+    font-size: 1.6rem;
+  }
+   .plan .plan__discription{
+    font-size: 1.8rem;
+  }
+   .plan .list__items{
+    font-size: 1.8rem;
+  }
+}
+
