@@ -318,4 +318,51 @@ h3 {
 .media__image {
   margin-top: 1rem;
 }
+/* quote */
+.quote{
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.9rem;
+  word-spacing: 2px;
+  font-size: 3rem;
+  margin: 1rem;
+}
+.quote__text::before{
+  content: open-quote;
+}
+.quote__text::after{
+  content: close-quote;
+}
+
+.quote .media__body{
+  font-style: normal;
+}
+
+.quote .media__image{
+  position: relative;
+  bottom: 1.5rem;
+  left: 10px;
+}
+
+.quote__author{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.quote .media__company{
+  opacity: 0.4;
+  font-size: 2rem;
+}
+@media screen and (min-width:800px) {
+  .quote__text{
+    font-size: 2.6rem;
+  }
+  .quote__author{
+    font-size: 2.4rem;
+  }
+  .quote .media__company{
+    font-size: 1.7rem;
+  }
+}
+
 
