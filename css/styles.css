@@ -19,6 +19,7 @@ body {
   --accent-color: #ff3400;
   --headings-color: #1b0760;
   --body-color: #918ca4;
+  --border-color:#ccc;
 }
 h1,
 h2,
@@ -180,4 +181,36 @@ h3 {
   .btn{
     font-size: 1.5rem;
   }
+}
+/* inputs */
+.inp{
+  padding: 1.5rem 3.5rem;
+  border-radius: 40px;
+  white-space: nowrap;
+  outline: 0;
+  border: 1px solid var(--border-color);
+  color: var(--headings-color);
+
+}
+::placeholder{
+  color: var(--headings-color);
+}
+@media screen and (min-width:800px) {
+  .inp{
+    font-size: 1.5rem;
+  }
+}
+/* input groupimg with button */
+.container{
+  border: 1px solid var(--border-color);
+  border-radius: 40px;
+ display: flex;
+}
+.container .inp{
+  border: 0;
+   flex-grow: 1;
+   margin-left: 5px;
+}
+.container .btn{
+  margin: 3px 2px;
 }
