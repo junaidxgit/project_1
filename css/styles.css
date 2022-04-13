@@ -364,5 +364,15 @@ h3 {
     font-size: 1.7rem;
   }
 }
+/* grid */
+.grid--3colmn{
+  display: grid;
+}
+
+@media screen and (min-width: 800px) {
+  .grid--3colmn{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
