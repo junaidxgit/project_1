@@ -227,7 +227,7 @@ h3 {
 }
 /* input groupimg with button */
 .container {
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   border-radius: 40px;
   display: flex;
 }
@@ -468,6 +468,7 @@ h3 {
 }
 .block__heading {
   margin-top: 0;
+  font-size: 5rem;
 }
 .block__header {
   text-align: center;
@@ -547,3 +548,27 @@ h3 {
     border-bottom: none;
   }
 }
+/* hero content */
+.hero{
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+
+}
+.hero__png{
+  width: 100%;
+  transform: translateY(-2rem);
+}
+.hero__tagline{
+  font-size: 2rem;
+  padding: 1rem 0 3rem;
+}
+
+@media screen and (min-width:800px) {
+  .hero{
+    padding-top: 0;
+  }
+  .hero__content{
+  text-align: left;
+  align-self: center;
+}
+}
+
