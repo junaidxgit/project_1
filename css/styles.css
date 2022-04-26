@@ -640,6 +640,30 @@ h3 {
   max-width: 500px;
   margin: 0  auto;
 }
- 
+ /* feature block */
+ .feature {
+   gap: 4rem 3rem;
+   margin: 12rem 0;
+
+ }
+
+ .feature__img{
+   width: 100%;
+  }
+ .feature__heading{
+   margin-top: 1rem;
+ }
+ .feature__grid{
+   order: 2;
+ }
+ .feature:first-of-type{
+   margin-top: 6rem;
+ }
+
+ @media screen and (min-width:800px) {
+   .feature:nth-last-of-type(even) .feature__cont{
+     order: 2;
+   }
+ }
 
 
