@@ -468,7 +468,10 @@ h3 {
 /* callouts */
 .callout {
   padding: 4rem;
-  /* border-radius: 10px; */
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  border-radius: 1rem;
 }
 .callout--primary {
   background: var(--primary-color);
@@ -489,6 +492,7 @@ h3 {
 .callout__content {
   text-align: center;
 }
+
 @media screen and (min-width: 768px) {
   .callout__content {
     text-align: left;
