@@ -470,7 +470,7 @@ h3 {
   padding: 4rem;
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 3rem;
   border-radius: 1rem;
 }
 .callout--primary {
@@ -1580,6 +1580,7 @@ h3 {
 @media screen and (min-width:800px) {
   .block-footer .grid{
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin-top: 5rem;
   }
   .block-footer .icon{
     display: none;
@@ -1613,5 +1614,14 @@ h3 {
   }
   .block-footer .collapsible__header{
     display: inline-block;
+  }
+  .block-footer{
+    padding-top: 5rem;
+  }
+}
+/* callout transform */
+@media screen and (min-width:800px) {
+  .callout-transform{
+    transform: translateY(5rem);
   }
 }
